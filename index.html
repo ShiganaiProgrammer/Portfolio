@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#667eea">
+    <title>ポートフォリオ | 開発者</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <button class="nav-toggle" aria-label="ナビゲーションを開く">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#about">ShiganaiProgrammerについて</a></li>
+                <li><a href="#projects">プロジェクト</a></li>
+                <li><a href="#skills">スキル</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ようこそ</h1>
+            <p>クリエイティブな開発者です</p>
+            <a href="#projects" class="cta-button">プロジェクトを見る</a>
+        </div>
+    </section>
+
+    <!-- アバウトセクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>ShiganaiProgrammerについて</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>こんにちは！私はUnityでのゲーム開発に情熱を持っています。また、趣味で3DモデリングをCADソフトで行っています。</p>
+                    <p>完全な独学で、ゲーム開発のスキルを習得してきました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロジェクトセクション -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>プロジェクト</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <h3>自作ゲーム</h3>
+                    <p>Unityを使って開発した自作ゲームのプロジェクトです。</p>
+                    <button class="project-link" data-open="1">詳細を見る →</button>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <h3>3Dモデリング</h3>
+                    <p>趣味で行っている3Dモデリングのプロジェクトです。</p>
+                    <button class="project-link" data-open="2">詳細を見る →</button>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <h3>あ</h3>
+                    <p>あ</p>
+                    <button class="project-link" data-open="3">詳細を見る →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- モーダル（プロジェクト詳細） -->
+    <div id="modal-1" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="閉じる">×</button>
+            <h3>自作ゲーム</h3>
+            <p>ここに自作ゲームの詳細やスクリーンショット、リンク等を追加できます。</p>
+        </div>
+    </div>
+    <div id="modal-2" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="閉じる">×</button>
+            <h3>3Dモデリング</h3>
+            <p>ここに3Dモデリングの詳細や画像を追加できます。</p>
+        </div>
+    </div>
+    <div id="modal-3" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="閉じる">×</button>
+            <h3>その他</h3>
+            <p>ここにプロジェクトの詳細を追加します。</p>
+        </div>
+    </div>
+
+    <!-- スキルセクション -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li>HTML / CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>バックエンド</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-item">
+                    <h3>ツール</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Docker</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクトセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <div class="contact-content">
+                <p>プロジェクトのご依頼や、お話しだけでも大歓迎です！</p>
+                <div class="contact-links">
+                    <a href="mailto:your-email@example.com" class="contact-link">メール</a>
+                    <a href="https://github.com" target="_blank" class="contact-link">GitHub</a>
+                    <a href="https://twitter.com" target="_blank" class="contact-link">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
