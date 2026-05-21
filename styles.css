@@ -8,8 +8,8 @@
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #1a2640;
+    background-color: #edf4ff;
 }
 
 html {
@@ -25,8 +25,8 @@ html {
 
 /* ヘッダー */
 .header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 24px rgba(33, 74, 160, 0.08);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -45,7 +45,7 @@ html {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #667eea;
+    color: #1f3bb3;
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ html {
 .hamburger {
     width: 26px;
     height: 2px;
-    background-color: #333;
+    background-color: #1f3bb3;
     display: block;
     position: relative;
 }
@@ -76,7 +76,7 @@ html {
     content: '';
     width: 26px;
     height: 2px;
-    background-color: #333;
+    background-color: #1f3bb3;
     position: absolute;
     left: 0;
 }
@@ -102,7 +102,7 @@ html {
 
 .modal-content {
     background: white;
-    color: #333;
+    color: #1a2640;
     padding: 2rem;
     border-radius: 12px;
     width: 90%;
@@ -122,18 +122,18 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #1d3a82;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #667eea;
+    color: #4f72ff;
 }
 
 /* ヒーローセクション */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d47d2 0%, #5f73ff 100%);
     color: white;
     padding: 150px 20px;
     text-align: center;
@@ -150,7 +150,7 @@ html {
 }
 
 .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
@@ -168,8 +168,8 @@ html {
 
 /* CTAボタン */
 .cta-button {
-    background-color: white;
-    color: #667eea;
+    background-color: #1f3bb3;
+    color: white;
     border: none;
     padding: 12px 30px;
     font-size: 1rem;
@@ -182,20 +182,21 @@ html {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(31, 59, 179, 0.28);
+    background-color: #4257e8;
 }
 
 /* アバウトセクション */
 .about {
     padding: 80px 20px;
-    background-color: #fff;
+    background-color: #eef4ff;
 }
 
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #333;
+    color: #1b2f73;
 }
 
 .about-content {
@@ -207,20 +208,108 @@ html {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
-    color: #666;
+    color: #3a4b78;
+}
+
+/* プロフィールセクション */
+.profile {
+    padding: 80px 20px;
+    background-color: #eef4ff;
+}
+
+.profile h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1b2f73;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    border: 1px solid rgba(79, 114, 255, 0.18);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 15px 35px rgba(47, 74, 171, 0.08);
+}
+
+.profile-avatar {
+    width: 100%;
+    max-width: 240px;
+    display: block;
+    margin: 0 auto 1.5rem;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(31, 59, 179, 0.12);
+}
+
+.profile-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1f3bb3;
+}
+
+.profile-card p {
+    color: #394d7b;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.profile-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.profile-card li {
+    margin-bottom: 0.9rem;
+    color: #4c5f8e;
+    font-size: 1rem;
+}
+
+.profile-stats {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.stat-item {
+    background: linear-gradient(135deg, #3f6efb 0%, #5f8bff 100%);
+    color: white;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(47, 74, 171, 0.12);
+}
+
+.stat-item span {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 /* プロジェクトセクション */
 .projects {
     padding: 80px 20px;
-    background-color: #f9f9f9;
+    background-color: #f5f7ff;
 }
 
 .projects h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #333;
+    color: #1b2f73;
 }
 
 .projects-grid {
@@ -253,39 +342,39 @@ html {
 .project-card h3 {
     padding: 1.5rem 1.5rem 0.5rem;
     font-size: 1.5rem;
-    color: #333;
+    color: #1b2f73;
 }
 
 .project-card p {
     padding: 0 1.5rem;
-    color: #666;
+    color: #4b5b84;
     font-size: 0.95rem;
 }
 
 .project-link {
     display: inline-block;
     padding: 1rem 1.5rem;
-    color: #667eea;
+    color: #1f3bb3;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project-link:hover {
-    color: #764ba2;
+    color: #4257e8;
 }
 
 /* スキルセクション */
 .skills {
     padding: 80px 20px;
-    background-color: #fff;
+    background-color: #eef4ff;
 }
 
 .skills h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: #333;
+    color: #1b2f73;
 }
 
 .skills-grid {
@@ -297,7 +386,8 @@ html {
 }
 
 .skill-item {
-    background: #f9f9f9;
+    background: #ffffff;
+    border: 1px solid rgba(79, 114, 255, 0.14);
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -306,7 +396,7 @@ html {
 .skill-item h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #667eea;
+    color: #1f3bb3;
 }
 
 .skill-item ul {
