@@ -19,10 +19,9 @@
             </button>
             <ul class="nav-links">
                 <li><a href="#home">ホーム</a></li>
-                <li><a href="#about">ShiganaiProgrammerについて</a></li>
+                <li><a href="#about">宮﨑拓哉について</a></li>
                 <li><a href="#projects">プロジェクト</a></li>
                 <li><a href="#skills">スキル</a></li>
-                <li><a href="#contact">お問い合わせ</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +30,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>ようこそ</h1>
-            <p>クリエイティブな開発者です</p>
+            <p>ゲーム開発と3Dモデリングを通じて、アイデアを形にします。</p>
             <a href="#projects" class="cta-button">プロジェクトを見る</a>
         </div>
     </section>
@@ -39,11 +38,42 @@
     <!-- アバウトセクション -->
     <section id="about" class="about">
         <div class="container">
-            <h2>ShiganaiProgrammerについて</h2>
+            <h2>宮﨑拓哉について</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>こんにちは！私はUnityでのゲーム開発に情熱を持っています。また、趣味で3DモデリングをCADソフトで行っています。</p>
                     <p>完全な独学で、ゲーム開発のスキルを習得してきました。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロフィールセクション -->
+    <section id="profile" class="profile">
+        <div class="container">
+            <h2>プロフィール</h2>
+            <div class="profile-grid">
+                <div class="profile-card">                    <img src="profile-photo.jpg" alt="プロフィール画像" class="profile-avatar">                    <h3>宮﨑拓哉</h3>
+                    <p>Unityゲーム開発と3Dモデリングを中心に活動しています。クリエイティブな表現と技術の両方を大切にし、青を基調としたクールなデザインを目指しています。</p>
+                    <ul>
+                        <li>専門: Unity / C# / 3Dモデリング</li>
+                        <li>ツール: Unity / Autodesk 360 / CAD</li>
+                        <li>モットー: 継続学習と品質重視</li>
+                    </ul>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span>0+</span>
+                        <p>年の制作経験</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>5+</span>
+                        <p>完成プロジェクト</p>
+                    </div>
+                    <div class="stat-item">
+                        <span>10+</span>
+                        <p>学んだ技術</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,15 +91,15 @@
                     <button class="project-link" data-open="1">詳細を見る →</button>
                 </div>
                 <div class="project-card">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #3a7dfd 100%);"></div>
                     <h3>3Dモデリング</h3>
                     <p>趣味で行っている3Dモデリングのプロジェクトです。</p>
                     <button class="project-link" data-open="2">詳細を見る →</button>
                 </div>
                 <div class="project-card">
                     <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                    <h3>あ</h3>
-                    <p>あ</p>
+                    <h3>その他</h3>
+                    <p>ここに他のプロジェクトの詳細を追加します。</p>
                     <button class="project-link" data-open="3">詳細を見る →</button>
                 </div>
             </div>
@@ -88,7 +118,8 @@
         <div class="modal-content">
             <button class="modal-close" aria-label="閉じる">×</button>
             <h3>3Dモデリング</h3>
-            <p>ここに3Dモデリングの詳細や画像を追加できます。</p>
+            <p><img src="3d-model.png" alt="3Dモデリング画像" style="width:100%; height:auto; display:block; margin-top:15px; border-radius:8px;"></p>
+            <a href="https://icloud182883.autodesk360.com/g/projects/202604161079510201/data/dXJuOmFkc2sud2lwcHJvZDpmcy5mb2xkZXI6Y28uWTkzUVhpZjlUY3E1TW9ocFhrMm5SZw==" target="_blank" class="cta-button" style="display:inline-block; margin-top:15px;">リンクを開く</a>
         </div>
     </div>
     <div id="modal-3" class="modal" aria-hidden="true">
@@ -108,45 +139,26 @@
                     <h3>フロントエンド</h3>
                     <ul>
                         <li>HTML / CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
                     </ul>
                 </div>
                 <div class="skill-item">
                     <h3>バックエンド</h3>
                     <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>Unity</li>
                     </ul>
                 </div>
                 <div class="skill-item">
                     <h3>ツール</h3>
                     <ul>
-                        <li>Git</li>
-                        <li>Docker</li>
                         <li>VS Code</li>
+                        <li>Unity Editor</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- コンタクトセクション -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>お問い合わせ</h2>
-            <div class="contact-content">
-                <p>プロジェクトのご依頼や、お話しだけでも大歓迎です！</p>
-                <div class="contact-links">
-                    <a href="mailto:your-email@example.com" class="contact-link">メール</a>
-                    <a href="https://github.com" target="_blank" class="contact-link">GitHub</a>
-                    <a href="https://twitter.com" target="_blank" class="contact-link">Twitter</a>
-                    <a href="https://linkedin.com" target="_blank" class="contact-link">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- フッター -->
     <footer class="footer">
